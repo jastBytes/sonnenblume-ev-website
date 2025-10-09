@@ -1,0 +1,10 @@
+baseURL = 'https://jast-bytes.de/'
+languageCode = 'de'
+title = 'Sonnenblume e.V. Oberems'
+enableEmoji = true
+
+# [params.author]
+# name = "Jan Steffen"
+# bio = "Mitglied des Sonnenblume e.V. Oberems"
+
+colorScheme = "blowfish"
