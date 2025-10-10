@@ -1,4 +1,4 @@
-baseURL = 'https://jast-bytes.de/'
+baseURL = 'https://jastbytes.github.io/sonnenblume-ev-website'
 languageCode = 'de'
 title = 'Föderverein Sonnenblume e.V.'
 enableEmoji = true
