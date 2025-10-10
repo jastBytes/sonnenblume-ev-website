@@ -19,6 +19,6 @@ Der Förderverein Sonnenblume e.V. existiert seit 2002  und unterstützt als gem
 
 ### Wie können Sie uns erreichen?
 
-- Per Mail an <fvsonnenblume@icloud.com>
-- Per Post an FV Sonnenblume, Erlenblick 29, 61479 Glashütten
+- Per Mail an <fvsonnenblume.oberems@gmail.com>
+- Per Post an FV Sonnenblume, Heuweg 9, 61479 Glashütten
 - Im Kindergarten Frau Kleinert ansprechen – sie leitet gerne alles an uns weiter
