@@ -1,15 +1,10 @@
 ---
 title: Mitmachen
-featured_image: ''
-omit_header_text: true
 description: Unterstützen Sie uns - und damit den Kindergarten
 type: page
 menu: main
 weight: 1
-
 ---
-
-## Unterstützen Sie uns - und damit den Kindergarten
 
 Der Förderverein Sonnenblume e.V. existiert seit 2002  und unterstützt als gemeinnütziger Verein den Kindergarten Oberems. Wir wollen die pädagogische Arbeit des Kindergartens fördern, die Gestaltung des Außengeländes voranbringen und durch die aktive Mitarbeit bei Festen und Veranstaltungen helfen. All dies, um unseren Kindern eine noch schönere Zeit im Kindergarten zu ermöglichen.
 
