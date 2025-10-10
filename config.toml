@@ -1,10 +1,30 @@
 baseURL = 'https://jast-bytes.de/'
 languageCode = 'de'
-title = 'Sonnenblume e.V. Oberems'
+title = 'Föderverein Sonnenblume e.V.'
 enableEmoji = true
+theme = 'ananke'
 
-# [params.author]
-# name = "Jan Steffen"
-# bio = "Mitglied des Sonnenblume e.V. Oberems"
+SectionPagesMenu = "main"
+enableRobotsTXT = true
 
-colorScheme = "blowfish"
+[languages]
+[languages.de]
+weight = 1
+contentDir = "content"
+
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
+
+[params]
+text_color = "black"
+favicon = ""
+site_logo = ""
+description = "Föderverein Sonnenblume e.V. der Ev. Kita Oberems"
+# choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+background_color_class = "bg-green"
+recent_posts_number = 0
+
+[ananke]
+show_recent_posts = false # show recent posts on the homepage

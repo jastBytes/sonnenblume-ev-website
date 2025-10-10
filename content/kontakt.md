@@ -1,7 +1,13 @@
-+++
-+++
+---
+title: Kontakt
+featured_image: ''
+omit_header_text: true
+description: Machen Sie mit!
+type: page
+menu: main
+weight: 2
 
-# Kontakt
+---
 
 Förderverein Sonnenblume e.V.
 

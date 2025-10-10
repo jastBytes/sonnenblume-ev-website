@@ -1,4 +1,12 @@
-# Impressum
+---
+title: "Impressum"
+featured_image: ''
+omit_header_text: true
+type: page
+menu: main
+weight: 3
+
+---
 
 ## Angaben gemäß § 5 DDG / § 55 Rundfunkstaatsvertrag
 
@@ -15,11 +23,10 @@ E-Mail: <fvsonnenblume.oberems@gmail.com>
 **Vertreten durch:**  
 Vorstand nach § 26 BGB:  
 
-Stephanie Buresch (Vorsitzende)  
-Katharina Mauer (Stellvertretende Vorsitzende)  
+Stephanie Buresch (1. Vorsitzende)  
+Fabian Beste (2. Vorsitzender)  
 Danja Kühn (Kassenwartin)  
-Dominic John (Stellvertretender Kassenwart)  
-Detlef Ott (Schriftführer)
+Dominic John (Schriftführer)
 
 **Registereintrag:**  
 Eingetragen im Vereinsregister  
