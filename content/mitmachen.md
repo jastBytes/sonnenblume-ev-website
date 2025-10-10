@@ -14,6 +14,7 @@ Der Förderverein Sonnenblume e.V. existiert seit 2002  und unterstützt als gem
   - Die Beitrittserklärung finden Sie [hier](../docs/Beitritt_Sonnenblume.pdf)
   - Das Formular für ein SEPA Lastschriftmandat finden Sie [hier](../docs/SEPA_Sonnenblume_VR_Bank_.pdf)
 - Mit Geld- oder Sachspenden
+  - Spendenkonto IBAN: DE24 5019 0000 6000 5794 57
 - Mit Ideen oder tatkräftiger Hilfe
 
 ### Wie können Sie uns erreichen?
