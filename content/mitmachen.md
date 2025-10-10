@@ -16,8 +16,8 @@ Der Förderverein Sonnenblume e.V. existiert seit 2002  und unterstützt als gem
 ### Wie können Sie uns in unserer Arbeit unterstützen?
 
 - Mitgliedschaft im Förderverein (Mindestbeitrag pro Jahr: 20,- €)
-  - Die Beitrittserklärung finden Sie [hier](/docs/Beitritt_Sonnenblume.pdf)
-  - Das Formular für ein SEPA Lastschriftmandat finden Sie [hier](/docs/SEPA_Sonnenblume_VR_Bank_.pdf)
+  - Die Beitrittserklärung finden Sie [hier](../docs/Beitritt_Sonnenblume.pdf)
+  - Das Formular für ein SEPA Lastschriftmandat finden Sie [hier](../docs/SEPA_Sonnenblume_VR_Bank_.pdf)
 - Mit Geld- oder Sachspenden
 - Mit Ideen oder tatkräftiger Hilfe
 
