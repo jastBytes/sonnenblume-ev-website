@@ -16,6 +16,18 @@ Mit den Spenden und Mitgliedsbeiträgen der Eltern konnten wir zuletzt zum Beisp
 
 Gemeinsam wollen wir jedes Jahr aufs Neue Aktivitäten planen und durchführen, damit unsere Kinder eine noch schönere Zeit im Kindergarten erleben.
 
+## Geplante Aktivitäten 2026/2027
+
+- St. Martinsumzug in Oberems – 06.11.2026
+- Nikolausgeschenke für den Kindergarten
+- Stand auf dem Oberemser Weihnachtsmarkt – 06.12.2026
+- Kino-Abend für die Vorschulkinder
+- Zwerkstatt (Holzarbeiten)
+- Gewaltpräventionskurs für Vorschulkinder
+- Graphomotorik-Workshop für Vorschulkinder
+- Schmücken des Brunnens zu Ostern – März 2027
+- Unterstützung des Kindergartenfests
+
 ## Ohne Sie geht es nicht
 
 Die Mittel des Fördervereins sind begrenzt. Damit wir unsere Ziele erreichen können, sind wir auf das Engagement der Eltern angewiesen – als Mitglied oder mit einer Spende. Der Einstiegs-Jahresbeitrag liegt bei nur € 20,- pro Jahr. Willkommen sind auch Großeltern, Verwandte oder andere Interessierte.
