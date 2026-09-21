@@ -4,7 +4,7 @@ featured_image: ''
 omit_header_text: true
 type: page
 menu: main
-weight: 3
+weight: 5
 ---
 
 ## Angaben gemäß § 5 DDG / § 55 Rundfunkstaatsvertrag
