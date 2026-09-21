@@ -10,9 +10,9 @@ Der Förderverein Sonnenblume e.V. existiert seit 2002 und unterstützt als geme
 
 ## Unser Vorstand
 
-{{< figure src="/images/jansteffen.jpg" alt="Jan Steffen, 1. Vorsitzender" class="w5 br2" >}}
-
 Der Vorstand engagiert sich ehrenamtlich für den Verein und wird alle zwei Jahre von den Mitgliedern gewählt:
+
+{{< figure src="/images/jansteffen.jpg" alt="Jan Steffen" class="w4 br-100 fl mr3 mb2" >}}
 
 - **Jan Steffen** – 1. Vorsitzender
 - **Luisa Moog** – 2. Vorsitzende
