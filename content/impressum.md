@@ -13,7 +13,7 @@ weight: 3
 Förderverein Sonnenblume e.V.
 
 **Anschrift:**  
-Heuweg 9  
+Hauptstraße 27c  
 61479 Glashütten
 
 **Kontakt:**  

@@ -10,7 +10,7 @@ Förderverein Sonnenblume e.V.
 
 Mailadresse: <fvsonnenblume.oberems@gmail.com>
 
-postalisch: c/o Heuweg 9, 61479 Glashütten
+postalisch: c/o Hauptstraße 27c, 61479 Glashütten
 
 Spendenkonto: IBAN: DE24 5019 0000 6000 5794 57
 
