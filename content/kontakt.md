@@ -3,7 +3,7 @@ title: Kontakt
 description: So erreichen Sie uns
 type: page
 menu: main
-weight: 2
+weight: 3
 ---
 
 Förderverein Sonnenblume e.V.
