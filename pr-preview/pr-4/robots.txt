@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://jastbytes.github.io/sitemap.xml
