@@ -22,10 +22,11 @@ E-Mail: <fvsonnenblume.oberems@gmail.com>
 **Vertreten durch:**  
 Vorstand nach § 26 BGB:  
 
-Stephanie Buresch (1. Vorsitzende)  
-Fabian Beste (2. Vorsitzender)  
-Danja Kühn (Kassenwartin)  
-Dominic John (Schriftführer)
+Jan Steffen (1. Vorsitzender)  
+Luisa Moog (2. Vorsitzende)  
+Bastian Weingärtner (Kassenwart)  
+Nicolai Kaltwasser (Schriftführer)  
+Fabian Beste (Beisitzer)
 
 **Registereintrag:**  
 Eingetragen im Vereinsregister  
