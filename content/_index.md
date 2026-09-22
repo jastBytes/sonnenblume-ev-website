@@ -1,6 +1,6 @@
 ---
 title: "Willkommen"
-description: "Föderverein der Ev. Kita Oberems"
+description: "Förderverein Sonnenblume e.V."
 cascade:
   featured_image: '/images/sunflower_hero.jpg'
 ---
