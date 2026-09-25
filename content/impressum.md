@@ -3,10 +3,12 @@ title: "Impressum"
 featured_image: ''
 omit_header_text: true
 type: page
-menu: footer
+menu:
+  footer:
+    weight: 1
 ---
 
-## Angaben gemäß § 5 DDG / § 55 Rundfunkstaatsvertrag
+## Angaben gemäß § 5 DDG
 
 **Vereinsname:**  
 Förderverein Sonnenblume e.V.
@@ -32,7 +34,7 @@ Eingetragen im Vereinsregister
 Registergericht: Amtsgericht Königstein  
 Registernummer: VR 1070
 
-**Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**  
+**Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:**  
 Jan Steffen  
 Hauptstraße 27c  
-61479 Oberems
+61479 Glashütten
