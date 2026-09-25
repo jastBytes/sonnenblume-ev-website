@@ -15,7 +15,7 @@ Als gemeinnütziger Verein wollen wir die pädagogische Arbeit des Kindergartens
   - [SEPA-Lastschriftmandat (PDF)](../docs/SEPA-Lastschriftmandat.pdf)
   - Wie wir mit Ihren Daten als Mitglied umgehen, erfahren Sie in unseren [Hinweisen zum Datenschutz](../datenschutz#5-mitgliedschaft-und-spenden).
 - Mit Geld- oder Sachspenden
-  - Spendenkonto IBAN: {{< verein "iban" >}}
+  - Spendenkonto bei der {{< verein "bank" >}}: IBAN {{< verein "iban" >}}, BIC {{< verein "bic" >}}
   - Auf Nachfrage stellen wir Ihnen gerne eine Spendenbescheinigung aus – schreiben Sie uns einfach eine E-Mail.
 - Mit Ideen oder tatkräftiger Hilfe
 

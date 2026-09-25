@@ -33,6 +33,8 @@ recent_posts_number = 0
 email = "fvsonnenblume.oberems@gmail.com"
 anschrift = "Hauptstraße 27c, 61479 Glashütten"
 iban = "DE24 5019 0000 6000 5794 57"
+bic = "FFVBDEFF"
+bank = "Frankfurter Volksbank"
 register = "Amtsgericht Königstein VR 1070"
 
 [ananke]

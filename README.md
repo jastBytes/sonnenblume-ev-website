@@ -13,7 +13,7 @@ Dies ist der Code der Website des Sonnenblume e.V. Oberems.
 - Die Inhalte der Seite liegen unter [content](/content/).
 - Das Format der Dateien ist [Markdown](https://de.wikipedia.org/wiki/Markdown#).
 - Werden Änderungen auf dem `main` Branch des Repositories commited, werden diese Änderungen automatisch veröffentlicht.
-- Kontaktdaten des Vereins (E-Mail, Anschrift, IBAN, Registereintrag) stehen zentral in [config.toml](/config.toml) unter `[params.verein]` und werden auf den Seiten mit `{{< verein "iban" >}}` usw. eingebunden. Das Impressum enthält die Angaben bewusst direkt im Text.
+- Kontaktdaten des Vereins (E-Mail, Anschrift, Bankverbindung, Registereintrag) stehen zentral in [config.toml](/config.toml) unter `[params.verein]` und werden auf den Seiten mit `{{< verein "iban" >}}` usw. eingebunden. Das Impressum enthält die Angaben bewusst direkt im Text.
 
 ## Vorschau
 
