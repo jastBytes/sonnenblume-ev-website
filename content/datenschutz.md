@@ -38,7 +38,21 @@ Wenn Sie uns per E-Mail kontaktieren, verarbeiten wir Ihre E-Mail-Adresse, Ihren
 
 Für unser E-Mail-Postfach nutzen wir Gmail der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Dabei kann eine Übermittlung in die USA stattfinden; Google ist unter dem EU-US Data Privacy Framework zertifiziert. Weitere Informationen finden Sie in der [Datenschutzerklärung von Google](https://policies.google.com/privacy?hl=de).
 
-## 5. Ihre Rechte
+## 5. Mitgliedschaft und Spenden
+
+Wenn Sie Mitglied werden, verarbeiten wir die Angaben aus Ihrer Beitrittserklärung (Name, Anschrift, E-Mail-Adresse, Telefonnummer, Höhe des Jahresbeitrags) und – bei Erteilung eines SEPA-Lastschriftmandats – Ihre Bankverbindung (Name des Kontoinhabers, Kreditinstitut, IBAN, BIC). Wenn Sie spenden, verarbeiten wir die Angaben, die für die Verbuchung und eine gewünschte Spendenbescheinigung erforderlich sind.
+
+**Zwecke:** Mitgliederverwaltung, Einzug der Mitgliedsbeiträge, Einladungen zu Mitgliederversammlungen und Informationen über Vereinsaktivitäten, Ausstellung von Spendenbescheinigungen sowie die ordnungsgemäße Buchführung des Vereins.
+
+**Rechtsgrundlagen:** Art. 6 Abs. 1 lit. b DSGVO (Durchführung der Mitgliedschaft nach unserer Satzung) sowie Art. 6 Abs. 1 lit. c DSGVO (gesetzliche, insbesondere steuerrechtliche Aufbewahrungspflichten).
+
+**Empfänger:** Zum Einzug der Beiträge geben wir die erforderlichen Daten an unser Kreditinstitut (Frankfurter Volksbank) weiter. Darüber hinaus geben wir Ihre Daten nicht an Dritte weiter und nutzen sie nicht für Werbung. Innerhalb des Vereins erhalten nur die Vorstandsmitglieder Zugriff, die sie für ihre Aufgaben benötigen.
+
+**Speicherdauer:** Wir speichern Ihre Daten für die Dauer der Mitgliedschaft. Nach dem Ende der Mitgliedschaft löschen wir sie, sofern keine gesetzlichen Aufbewahrungsfristen entgegenstehen; Unterlagen, die für die Buchführung relevant sind (z. B. Beitragszahlungen und Spendenbescheinigungen), bewahren wir für die gesetzlich vorgeschriebene Dauer von derzeit bis zu zehn Jahren auf.
+
+**Erforderliche Angaben:** Name und Anschrift benötigen wir, um Ihre Mitgliedschaft zu führen; die Bankverbindung, sofern Sie am Lastschriftverfahren teilnehmen. Ohne diese Angaben ist eine Mitgliedschaft nicht möglich.
+
+## 6. Ihre Rechte
 
 Sie haben nach der DSGVO das Recht auf
 

@@ -11,8 +11,9 @@ Als gemeinnütziger Verein wollen wir die pädagogische Arbeit des Kindergartens
 ### Wie können Sie uns in unserer Arbeit unterstützen?
 
 - Mitgliedschaft im Förderverein (Mindestbeitrag pro Jahr: 20,- €)
-  - [Beitrittserklärung (PDF)](../docs/Beitritt_Sonnenblume.pdf)
-  - [SEPA-Lastschriftmandat (PDF)](../docs/SEPA_Sonnenblume_VR_Bank_.pdf)
+  - [Beitrittserklärung (PDF)](../docs/Beitrittserklaerung.pdf)
+  - [SEPA-Lastschriftmandat (PDF)](../docs/SEPA-Lastschriftmandat.pdf)
+  - Wie wir mit Ihren Daten als Mitglied umgehen, erfahren Sie in unseren [Hinweisen zum Datenschutz](../datenschutz#5-mitgliedschaft-und-spenden).
 - Mit Geld- oder Sachspenden
   - Spendenkonto IBAN: {{< verein "iban" >}}
   - Auf Nachfrage stellen wir Ihnen gerne eine Spendenbescheinigung aus – schreiben Sie uns einfach eine E-Mail.
