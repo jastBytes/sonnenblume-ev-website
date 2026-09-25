@@ -1,6 +1,6 @@
 baseURL = 'https://jastbytes.github.io/sonnenblume-ev-website'
 locale = 'de'
-title = 'Föderverein Sonnenblume e.V.'
+title = 'Förderverein Sonnenblume e.V.'
 enableEmoji = true
 theme = 'ananke'
 
@@ -19,12 +19,23 @@ filename = "sitemap.xml"
 
 [params]
 text_color = "black"
-favicon = "images/logo.png"
+# Logo liegt unter assets/ und wird für Header und Favicon automatisch verkleinert
 site_logo = "images/logo.png"
-description = "Föderverein Sonnenblume e.V. der Ev. Kita Oberems"
+# Vorschaubild beim Teilen der Seite (z. B. in Messengern)
+images = ["images/sunflower_hero.jpg"]
+description = "Förderverein Sonnenblume e.V. der Ev. Kita Oberems"
 # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
 background_color_class = "bg-green"
 recent_posts_number = 0
+
+# Zentrale Vereinsdaten, auf den Seiten per {{< verein "..." >}} eingebunden
+[params.verein]
+email = "fvsonnenblume.oberems@gmail.com"
+anschrift = "Hauptstraße 27c, 61479 Glashütten"
+iban = "DE24 5019 0000 6000 5794 57"
+bic = "FFVBDEFF"
+bank = "Frankfurter Volksbank"
+register = "Amtsgericht Königstein VR 1070"
 
 [ananke]
 show_recent_posts = false # show recent posts on the homepage

@@ -10,7 +10,7 @@ weight: 2
 
 Mit den Spenden und Mitgliedsbeiträgen der Eltern konnten wir im vergangenen Vereinsjahr zum Beispiel ermöglichen:
 
-- St. Martins-Umzug in Oberems
+- St.-Martins-Umzug in Oberems
 - Weihnachtsbaum für den Kindergarten
 - Weihnachtsgeschenke
 - Ostereier färben und Ortsbrunnen schmücken
@@ -28,7 +28,7 @@ Gemeinsam wollen wir jedes Jahr aufs Neue Aktivitäten planen und durchführen, 
 
 ## Geplante Aktivitäten 2026/2027
 
-- St. Martinsumzug in Oberems – 06.11.2026
+- St.-Martins-Umzug in Oberems – 06.11.2026
 - Nikolausgeschenke für den Kindergarten
 - Stand auf dem Oberemser Weihnachtsmarkt – 06.12.2026
 - Kino-Abend für die Vorschulkinder

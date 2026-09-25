@@ -3,14 +3,16 @@ title: "Impressum"
 featured_image: ''
 omit_header_text: true
 type: page
-menu: main
-weight: 5
+menu:
+  footer:
+    weight: 1
 ---
 
-## Angaben gemäß § 5 DDG / § 55 Rundfunkstaatsvertrag
+## Angaben gemäß § 5 DDG
 
 **Vereinsname:**  
-Förderverein Sonnenblume e.V.
+Sonnenblume – Förderverein des evangelischen Kindergartens Oberems e.V.  
+Sitz: Glashütten/Ts.
 
 **Anschrift:**  
 Hauptstraße 27c  
@@ -28,12 +30,14 @@ Bastian Weingärtner (Kassenwart)
 Nicolai Kaltwasser (Schriftführer)  
 Fabian Beste (Beisitzer)
 
+Der Verein wird gerichtlich und außergerichtlich durch jeweils zwei Vorstandsmitglieder gemeinsam vertreten.
+
 **Registereintrag:**  
 Eingetragen im Vereinsregister  
-Registergericht: Amtsgericht Königstein  
+Registergericht: Amtsgericht Königstein im Taunus  
 Registernummer: VR 1070
 
-**Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**  
+**Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:**  
 Jan Steffen  
 Hauptstraße 27c  
-61479 Oberems
+61479 Glashütten
