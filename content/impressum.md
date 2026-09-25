@@ -15,6 +15,7 @@ Sonnenblume – Förderverein des evangelischen Kindergartens Oberems e.V.
 Sitz: Glashütten/Ts.
 
 **Anschrift:**  
+c/o Jan Steffen  
 Hauptstraße 27c  
 61479 Glashütten
 
