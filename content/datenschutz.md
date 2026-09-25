@@ -14,6 +14,7 @@ Der Schutz Ihrer persönlichen Daten ist uns wichtig. Nachfolgend informieren wi
 ## 1. Verantwortlicher
 
 Sonnenblume – Förderverein des evangelischen Kindergartens Oberems e.V.  
+c/o Jan Steffen  
 Hauptstraße 27c  
 61479 Glashütten  
 E-Mail: <fvsonnenblume.oberems@gmail.com>
