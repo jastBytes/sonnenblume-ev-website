@@ -1,0 +1,4 @@
+{{ with site.Params.site_logo | resources.Get }}
+  {{ with .Resize "32x32 png" }}<link rel="icon" href="{{ .RelPermalink }}" type="image/png" sizes="32x32" />{{ end }}
+  {{ with .Resize "180x180 png" }}<link rel="apple-touch-icon" href="{{ .RelPermalink }}" sizes="180x180" />{{ end }}
+{{ end }}

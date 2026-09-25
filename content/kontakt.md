@@ -8,10 +8,11 @@ weight: 4
 
 Förderverein Sonnenblume e.V.
 
-Mailadresse: <fvsonnenblume.oberems@gmail.com>
+- **E-Mail:** {{< verein "email" >}}
+- **Post:** c/o {{< verein "anschrift" >}}
+- **Im Kindergarten:** Sprechen Sie Frau Kleinert an – sie leitet gerne alles an uns weiter.
 
-postalisch: c/o Hauptstraße 27c, 61479 Glashütten
+**Spendenkonto:** IBAN {{< verein "iban" >}}  
+Auf Nachfrage stellen wir Ihnen gerne eine Spendenbescheinigung aus.
 
-Spendenkonto: IBAN: DE24 5019 0000 6000 5794 57
-
-Amtsgericht Königstein VR1070
+{{< verein "register" >}}

@@ -3,8 +3,7 @@ title: "Impressum"
 featured_image: ''
 omit_header_text: true
 type: page
-menu: main
-weight: 5
+menu: footer
 ---
 
 ## Angaben gemäß § 5 DDG / § 55 Rundfunkstaatsvertrag

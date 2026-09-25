@@ -2,3 +2,4 @@ resources/
 public/
 tmp/
 .vs/
+.hugo_build.lock

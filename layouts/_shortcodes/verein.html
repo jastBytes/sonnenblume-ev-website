@@ -1,0 +1,5 @@
+{{- /* Gibt einen Wert aus [params.verein] in config.toml aus, z. B. {{< verein "iban" >}} */ -}}
+{{- $key := .Get 0 -}}
+{{- $value := index site.Params.verein $key -}}
+{{- if not $value -}}{{- errorf "verein-Shortcode: unbekannter Schlüssel %q in %s" $key .Position -}}{{- end -}}
+{{- if eq $key "email" -}}<a href="mailto:{{ $value }}">{{ $value }}</a>{{- else -}}{{ $value }}{{- end -}}
