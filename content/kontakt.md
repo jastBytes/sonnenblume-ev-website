@@ -10,7 +10,7 @@ Förderverein Sonnenblume e.V.
 
 - **E-Mail:** {{< verein "email" >}}
 - **Post:** Förderverein Sonnenblume e.V., {{< verein "anschrift" >}}
-- **Im Kindergarten:** Sprechen Sie Frau Kleinert an – sie leitet gerne alles an uns weiter.
+- **Im Kindergarten:** Sprechen Sie Frau Kleinert an – sie leitet gerne alles an uns weiter ({{< verein "kindergarten" >}}).
 
 **Spendenkonto:** {{< verein "bank" >}}  
 IBAN {{< verein "iban" >}}  
