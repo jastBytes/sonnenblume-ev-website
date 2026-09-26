@@ -19,7 +19,7 @@ Als gemeinnütziger Verein wollen wir die pädagogische Arbeit des Kindergartens
   - Auf Nachfrage stellen wir Ihnen gerne eine Spendenbescheinigung aus – schreiben Sie uns einfach eine E-Mail.
 - Mit Ideen oder tatkräftiger Hilfe
 
-Ausgefüllte Formulare können Sie im Kindergarten bei Frau Kleinert abgeben oder per Post an uns schicken: Förderverein Sonnenblume e.V., {{< verein "anschrift" >}}.
+Ausgefüllte Formulare können Sie im Kindergarten bei Frau Kleinert abgeben ({{< verein "kindergarten" >}}) oder per Post an uns schicken: Förderverein Sonnenblume e.V., {{< verein "anschrift" >}}.
 
 ### Wie können Sie uns erreichen?
 
