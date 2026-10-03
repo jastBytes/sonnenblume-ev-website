@@ -10,6 +10,8 @@ Dies ist der Code der Website des Sonnenblume e.V. Oberems.
 
 ## Inhalte anpassen
 
+Eine ausführliche Schritt-für-Schritt-Anleitung für den Vorstand, ohne technische Vorkenntnisse, steht in [ANLEITUNG.md](ANLEITUNG.md).
+
 - Die Inhalte der Seite liegen unter [content](/content/).
 - Das Format der Dateien ist [Markdown](https://de.wikipedia.org/wiki/Markdown#).
 - Werden Änderungen auf dem `main` Branch des Repositories commited, werden diese Änderungen automatisch veröffentlicht.
