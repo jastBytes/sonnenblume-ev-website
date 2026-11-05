@@ -1,0 +1,7 @@
+{{- /* Selbst gehostete Schrift für Überschriften (kein Abruf bei Google) */ -}}
+<link rel="preload" href="{{ "fonts/fredoka-latin-700.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<style>
+  @font-face { font-family: "Fredoka"; src: url("{{ "fonts/fredoka-latin-600.woff2" | relURL }}") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+  @font-face { font-family: "Fredoka"; src: url("{{ "fonts/fredoka-latin-700.woff2" | relURL }}") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+</style>
+{{- partials.Include "hook.html" (dict "hook" "head-end" "context" .) -}}

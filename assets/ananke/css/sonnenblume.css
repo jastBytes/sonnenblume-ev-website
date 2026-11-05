@@ -1,0 +1,357 @@
+/* Gestaltung im Stil des Vereinsflyers: Himmel, Wolken, Sonnenblume, Hügel */
+
+/* Schrift "Fredoka" (OFL, static/fonts) wird in layouts/_partials/head-additions.html eingebunden,
+   damit der Pfad auch unter dem Unterpfad von GitHub Pages stimmt. */
+
+:root {
+  --sb-sky: #62bde8;
+  --sb-sky-light: #9fd6f2;
+  --sb-cloud: #ffffff;
+  --sb-pink: #cf3576;
+  --sb-pink-dark: #b02a62;
+  --sb-ink: #2f4254;
+  --sb-ink-soft: #4d6072;
+  --sb-hill-back: #a6d784;
+  --sb-hill-front: #7dbf5c;
+  --sb-ground: #fffdf7;
+  --sb-sun: #f7c51e;
+  --sb-heading-font: "Fredoka", "Trebuchet MS", "Arial Rounded MT Bold", sans-serif;
+}
+
+.sb-body {
+  background: var(--sb-ground);
+  color: var(--sb-ink);
+}
+
+.sb-ink {
+  color: var(--sb-ink);
+}
+
+/* Fredoka schiebt sonst das V über den Punkt in "e.V." */
+.site-nav__link,
+.cloud-card,
+.btn,
+main h1,
+main h2,
+main h3,
+.site-footer {
+  font-kerning: none;
+}
+
+/* Kopfbereich */
+
+.sky {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--sb-sky) 0%, var(--sb-sky-light) 100%);
+  padding-bottom: 72px;
+}
+
+.sky--home {
+  padding-bottom: 110px;
+}
+
+/* Seiten ohne Titel im Kopfbereich (Impressum, Datenschutz) */
+.sky--compact {
+  padding-bottom: 40px;
+}
+
+.sky--compact .sky__hero {
+  display: none;
+}
+
+.sky__clouds {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: var(--sb-cloud);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sky__cloud--a,
+  .sky__cloud--c {
+    animation: sky-drift 40s ease-in-out infinite alternate;
+  }
+
+  .sky__cloud--b,
+  .sky__cloud--d {
+    animation: sky-drift 55s ease-in-out infinite alternate-reverse;
+  }
+}
+
+@keyframes sky-drift {
+  from { translate: -30px 0; }
+  to { translate: 30px 0; }
+}
+
+.sky__hills {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 70px;
+  pointer-events: none;
+}
+
+.sky--home .sky__hills {
+  height: 110px;
+}
+
+.sky__hill--back { fill: var(--sb-hill-back); }
+.sky__hill--front { fill: var(--sb-hill-front); }
+.sky__ground { fill: var(--sb-ground); }
+
+.site-nav {
+  position: relative;
+  z-index: 2;
+}
+
+.site-nav__logo img {
+  filter: drop-shadow(0 4px 6px rgba(0, 60, 100, 0.2));
+}
+
+/* Auf der Startseite steht die große Sonnenblume im Kopfbereich */
+.is-home .site-nav__logo {
+  display: none;
+}
+
+@media screen and (min-width: 60em) {
+  .is-home .site-nav__logo {
+    display: inline-block;
+    visibility: hidden;
+  }
+}
+
+.site-nav__link {
+  color: var(--sb-ink);
+  font-family: var(--sb-heading-font);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.35em 0.8em;
+  border-radius: 999px;
+  transition: background-color 0.15s ease;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus-visible {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.site-nav__link.is-current {
+  background: var(--sb-cloud);
+  color: var(--sb-pink);
+}
+
+.sky__hero {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0.5rem 1rem 1.5rem;
+}
+
+.sky__sun {
+  width: 9rem;
+  height: auto;
+  filter: drop-shadow(0 6px 10px rgba(0, 60, 100, 0.25));
+}
+
+/* Wolkenförmige Karte für Titel und Untertitel */
+.cloud-card {
+  position: relative;
+  background: var(--sb-cloud);
+  border-radius: 2.5rem;
+  padding: 1.75rem 2rem 1.5rem;
+  max-width: 40rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 70, 110, 0.15);
+}
+
+.cloud-card::before,
+.cloud-card::after {
+  content: "";
+  position: absolute;
+  background: var(--sb-cloud);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.cloud-card::before {
+  width: 7rem;
+  height: 7rem;
+  top: -2.5rem;
+  left: 12%;
+}
+
+.cloud-card::after {
+  width: 5rem;
+  height: 5rem;
+  top: -1.5rem;
+  right: 18%;
+}
+
+.cloud-card__title {
+  text-wrap: balance;
+  font-family: var(--sb-heading-font);
+  font-weight: 700;
+  color: var(--sb-pink);
+  font-size: 2rem;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.cloud-card__subtitle {
+  font-family: var(--sb-heading-font);
+  font-weight: 600;
+  color: var(--sb-ink-soft);
+  font-size: 1.15rem;
+  margin: 0.5rem 0 0;
+}
+
+.cloud-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1.25rem 0 0;
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--sb-heading-font);
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 0.6em 1.4em;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.btn--pink {
+  background: var(--sb-pink);
+  color: #fff;
+}
+
+.btn--light {
+  background: #fff;
+  color: var(--sb-pink-dark);
+  box-shadow: inset 0 0 0 2px var(--sb-pink);
+}
+
+@media screen and (min-width: 60em) {
+  .sky__hero {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem 2rem 2rem;
+  }
+
+  .sky--home .sky__sun {
+    width: 17rem;
+  }
+
+  .sky:not(.sky--home) .sky__hero {
+    padding-bottom: 1rem;
+  }
+
+  .cloud-card {
+    padding: 2.25rem 3rem 2rem;
+  }
+
+  .sky--home .cloud-card__title {
+    font-size: 2.75rem;
+  }
+
+  .cloud-card__subtitle {
+    font-size: 1.35rem;
+  }
+}
+
+/* Inhalt */
+
+main article,
+.page-content {
+  color: var(--sb-ink);
+}
+
+main h1,
+main h2,
+main h3,
+.page-title {
+  font-family: var(--sb-heading-font);
+  font-weight: 700;
+  color: var(--sb-pink);
+  line-height: 1.2;
+}
+
+main h2 {
+  font-size: 1.75rem;
+  margin-top: 2.25rem;
+}
+
+main h3 {
+  font-size: 1.35rem;
+  margin-top: 1.75rem;
+}
+
+.nested-links a,
+main article a {
+  color: var(--sb-pink-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.nested-links a:hover,
+main article a:hover {
+  color: var(--sb-pink);
+}
+
+main li::marker {
+  color: var(--sb-pink);
+}
+
+main strong {
+  color: var(--sb-ink);
+}
+
+/* Fußzeile als grüner Hügel */
+
+.site-footer {
+  background: var(--sb-hill-back);
+  border-top-left-radius: 50% 40px;
+  border-top-right-radius: 50% 40px;
+  padding-top: 2.5rem;
+}
+
+.site-footer__inner {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.site-footer__home,
+.site-footer__link {
+  color: var(--sb-ink);
+  font-family: var(--sb-heading-font);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-footer__link:hover,
+.site-footer__home:hover {
+  color: var(--sb-pink-dark);
+  text-decoration: underline;
+}
