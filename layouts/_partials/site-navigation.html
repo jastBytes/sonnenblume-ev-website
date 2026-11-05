@@ -1,6 +1,6 @@
-<nav class="pv3 ph3 ph4-ns" role="navigation">
+<nav class="site-nav pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l center items-center justify-between">
-    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white white-90 dib no-underline">
+    <a href="{{ .Site.Home.RelPermalink }}" class="site-nav__logo dib no-underline">
       {{ with .Site.Params.site_logo | resources.Get }}
         {{ $logo := .Resize "256x png" }}
         <img src="{{ $logo.RelPermalink }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}" class="w3 w4-ns h-auto" alt="{{ $.Site.Title }}" />
@@ -11,10 +11,10 @@
     <div class="flex-l items-center">
       {{ partials.Include "i18nlist.html" . }}
       {{ if .Site.Menus.main }}
-        <ul class="{{ compare.Conditional (compare.Eq $.Site.Language.Direction "rtl") "pr0 ml3" "pl0 mr3" }}">
+        <ul class="site-nav__menu">
           {{ range .Site.Menus.main }}
-          <li class="list f5 f4-ns fw4 dib {{ compare.Conditional (compare.Eq $.Site.Language.Direction "rtl") "pl3" "pr3" }}">
-            <a class="hover-white white-90 no-underline" href="{{ .URL }}" title="{{ lang.Translate "pageTitle" . }}">
+          <li class="site-nav__item">
+            <a class="site-nav__link{{ if $.IsMenuCurrent "main" . }} is-current{{ end }}" href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>
               {{ .Name }}
             </a>
           </li>

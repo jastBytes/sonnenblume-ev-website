@@ -1,8 +1,6 @@
 ---
 title: "Willkommen"
 description: "Förderverein Sonnenblume e.V."
-cascade:
-  featured_image: '/images/sunflower_hero.jpg'
 ---
 
 Wir sind der Förderverein Sonnenblume e.V. und unterstützen den evangelischen Kindergarten Oberems bei Projekten und Anschaffungen, die sich aus dem regulären Kita-Budget nicht finanzieren lassen.
