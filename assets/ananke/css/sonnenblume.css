@@ -125,7 +125,30 @@ main h3,
   }
 }
 
+.site-nav__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+
+.site-nav__item {
+  flex: 0 0 auto;
+}
+
+.site-nav__logo {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+}
+
 .site-nav__link {
+  display: inline-block;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.45);
   color: var(--sb-ink);
   font-family: var(--sb-heading-font);
   font-weight: 600;
@@ -137,7 +160,55 @@ main h3,
 
 .site-nav__link:hover,
 .site-nav__link:focus-visible {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Auf Handys passen vier Punkte nicht in eine Zeile: ordentliches 2 x 2 statt 3 + 1 */
+@media screen and (max-width: 31em) {
+  .site-nav__menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 10rem));
+    justify-content: center;
+  }
+
+  .site-nav__link {
+    display: block;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  /* Wolken hinter der Navigation würden einen Punkt wie ausgewählt aussehen lassen */
+  .sky__cloud--a,
+  .sky__cloud--b {
+    display: none;
+  }
+}
+
+/* Platz für die Wolkenbuckel der Karte unter der Navigation (Handy und Tablet) */
+@media screen and (max-width: 59.99em) {
+  .sky .sky__hero {
+    padding-top: 2.75rem;
+  }
+
+  .sky.sky--home .sky__hero {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .site-nav__logo {
+    margin: 0;
+  }
+
+  .site-nav__menu {
+    margin: 0 1rem 0 0;
+    gap: 0.75rem;
+  }
+
+  .site-nav__link {
+    font-size: 1.15rem;
+    background: transparent;
+  }
 }
 
 .site-nav__link.is-current {
