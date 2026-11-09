@@ -15,6 +15,7 @@ Auf **Deutsch** bleibt alles, was Besucher oder der Vorstand lesen:
 - `ANLEITUNG.md` und `README.md`
 - Hinweise für den Vorstand in Dateien, die er selbst bearbeitet (z. B. die Kommentare oben in `data/events.yaml`)
 - Texte, die Workflows als Kommentar in Pull Requests schreiben
+- Commit-Nachrichten sowie Titel und Beschreibung von Pull Requests
 
 ## Projekt in Kürze
 
