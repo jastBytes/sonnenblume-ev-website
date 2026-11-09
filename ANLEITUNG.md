@@ -1,10 +1,10 @@
 # Anleitung: Website-Inhalte bearbeiten
 
-Für den Vorstand des Fördervereins Sonnenblume e.V. · Stand: Oktober 2026
+Für den Vorstand des Fördervereins Sonnenblume e.V. · Stand: November 2026
 
 ## So funktioniert die Website
 
-Sie ändern einen Text im Browser, prüfen eine Vorschau und geben die Änderung frei. Etwa zwei Minuten später ist sie auf der Website. Programmieren müssen Sie dafür nicht.
+Sie ändern einen Text im Browser, prüfen eine Vorschau und geben die Änderung frei. Etwa zwei Minuten später ist sie auf der Website [sonnenblume-oberems.de](https://sonnenblume-oberems.de/). Programmieren müssen Sie dafür nicht.
 
 Alle Texte der Website liegen als einfache Textdateien bei **GitHub**, einem Online-Dienst zum Verwalten von Dateien. Man kann sich GitHub wie einen geteilten Ordner vorstellen, der sich jede Änderung merkt. Jede Seite der Website ist eine eigene Datei, zum Beispiel gehört die Datei `kontakt.md` zur Seite *Kontakt*.
 
@@ -78,10 +78,10 @@ Solange die Vorschau nicht stimmt, korrigieren Sie im selben Vorschlag. Die Webs
 
 ### 2. In der Vorschau prüfen
 
-1. Sie landen auf der Seite Ihres Änderungsvorschlags. Warten Sie ein bis zwei Minuten.
-2. Dann erscheint dort ein Kommentar mit **🔍 Preview:** und einem Link. Klicken Sie darauf.
+1. Sie landen auf der Seite Ihres Änderungsvorschlags. Dort erscheint ein Kommentar: **⏳ Vorschau wird erstellt …**
+2. Nach etwa drei bis fünf Minuten ändert sich dieser Kommentar zu **✅ Vorschau bereit** mit einem Link. Klicken Sie erst dann darauf (gegebenenfalls die Seite neu laden).
 3. Die Vorschau zeigt die komplette Website mit Ihrer Änderung. Prüfen Sie die geänderte Seite.
-4. Stimmt etwas nicht? Klicken Sie im Änderungsvorschlag oben auf den Reiter **Files changed**, dann rechts neben dem Dateinamen auf **…** und **Edit file**. Korrigieren Sie den Text und klicken Sie wieder auf **Commit changes…**. Die Option **Commit directly to the … branch** ist dabei schon richtig ausgewählt. Nach ein bis zwei Minuten zeigt derselbe Vorschau-Link den neuen Stand (Seite neu laden).
+4. Stimmt etwas nicht? Klicken Sie im Änderungsvorschlag oben auf den Reiter **Files changed**, dann rechts neben dem Dateinamen auf **…** und **Edit file**. Korrigieren Sie den Text und klicken Sie wieder auf **Commit changes…**. Die Option **Commit directly to the … branch** ist dabei schon richtig ausgewählt. Der Kommentar springt dann wieder auf **⏳ Vorschau wird erstellt …** und kurz darauf auf **✅ Vorschau bereit**. Derselbe Link zeigt dann den neuen Stand.
 
 ### 3. Freigeben
 
@@ -173,7 +173,7 @@ Solange Sie nur Text in den Dateien aus der Tabelle oben ändern, kann wenig sch
 
 | Was Sie sehen | Was es bedeutet | Was Sie tun |
 | --- | --- | --- |
-| Nach fünf Minuten kein Kommentar mit Vorschau-Link, oder ein rotes ✖ bzw. „Some checks were not successful“ | Die Website ließ sich mit der Änderung nicht bauen, meist wegen eines Tippfehlers im Kopfbereich oder fehlender Anführungszeichen in `config.toml` | Nicht freigeben. Den Link zum Änderungsvorschlag an ein Vorstandsmitglied mit mehr Erfahrung schicken. Die Website bleibt so lange unverändert. |
+| Nach zehn Minuten steht im Kommentar noch **⏳ Vorschau wird erstellt …**, oder es erscheint ein rotes ✖ bzw. „Some checks were not successful“ | Die Website ließ sich mit der Änderung nicht bauen, meist wegen eines Tippfehlers im Kopfbereich oder fehlender Anführungszeichen in `config.toml` | Nicht freigeben. Den Link zum Änderungsvorschlag an ein Vorstandsmitglied mit mehr Erfahrung schicken. Die Website bleibt so lange unverändert. |
 | Die Vorschau sieht anders aus als erwartet | Die Änderung ist noch nicht öffentlich | Im Änderungsvorschlag korrigieren (Schritt 2, Punkt 4) oder den Vorschlag mit **Close pull request** verwerfen |
 | Nach der Freigabe ist auf der Website etwas falsch | Die Änderung ist öffentlich, lässt sich aber zurücknehmen | Oben auf **Pull requests**, dann **Closed**, den eigenen Vorschlag öffnen und unten auf **Revert** klicken. Das erzeugt einen neuen Vorschlag, der die Änderung rückgängig macht. Diesen wie gewohnt freigeben. |
 | Versehentlich **Commit directly to the main branch** gewählt | Die Änderung ging ohne Vorschau direkt online | Website prüfen. Ist alles in Ordnung, ist nichts zu tun, sonst mit einer neuen Änderung korrigieren. |
