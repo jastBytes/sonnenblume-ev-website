@@ -7,7 +7,7 @@ Wir sind der Förderverein Sonnenblume e.V. und unterstützen den evangelischen 
 
 Von der Jahresmitgliederversammlung über den St.-Martins-Umzug bis zum Weihnachtsmarkt – werfen Sie einen Blick auf unsere [vergangenen und geplanten Aktivitäten](aktivitaeten).
 
-{{< naechste-termine >}}
+{{< upcoming-events >}}
 
 ## Ohne Sie geht es nicht
 
@@ -15,4 +15,4 @@ Die Mittel des Fördervereins sind begrenzt. Damit wir unsere Ziele erreichen k�
 
 **[Werden Sie Mitglied oder unterstützen Sie uns mit einer Spende](mitmachen) – wir freuen uns auf Ihr Engagement!**
 
-{{< spenden-qr >}}
+{{< donation-qr >}}

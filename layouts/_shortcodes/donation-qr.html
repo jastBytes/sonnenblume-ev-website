@@ -1,0 +1,27 @@
+{{- /* Donation QR code (GiroCode / EPC QR) built from [params.verein] in config.toml.
+       Banking apps use it to prefill recipient, IBAN and remittance information. */ -}}
+{{- $club := site.Params.verein -}}
+{{- range slice "account_holder" "iban" "bic" "remittance_info" -}}
+  {{- if not (index $club .) }}{{ errorf "donation-qr: %q is missing in [params.verein] in config.toml" . }}{{ end -}}
+{{- end -}}
+{{- /* EPC069-12 payload: service tag, version, UTF-8, SCT, BIC, name, IBAN,
+       amount, purpose, structured reference, unstructured remittance */ -}}
+{{- $payload := delimit (slice
+    "BCD" "002" "1" "SCT"
+    (replace $club.bic " " "")
+    $club.account_holder
+    (replace $club.iban " " "")
+    "" "" ""
+    $club.remittance_info
+  ) "\n" -}}
+{{- $qr := images.QR $payload (dict "level" "medium" "scale" 4 "targetDir" "images/qr") -}}
+<section class="sb-box sb-donation" aria-labelledby="donation-qr">
+  <img class="sb-donation__qr" src="{{ $qr.RelPermalink }}" width="{{ $qr.Width }}" height="{{ $qr.Height }}"
+       alt="QR-Code für eine Spende an {{ $club.account_holder }}, IBAN {{ $club.iban }}">
+  <div class="sb-donation__text">
+    <h2 id="donation-qr" class="sb-box__title">Spenden per Banking-App</h2>
+    <p>Scannen Sie den Code in Ihrer Banking-App mit der Funktion für Überweisungen per QR-Code (z.&nbsp;B. „Scan2Bank“ oder „Foto-Überweisung“). Empfänger, IBAN und Verwendungszweck sind dann schon ausgefüllt, nur den Betrag tragen Sie selbst ein.</p>
+    <p class="sb-donation__mobile-hint">Sie lesen auf dem Handy? Dann übernehmen Sie die Bankverbindung einfach von hier:</p>
+    <p class="sb-donation__account">{{ $club.account_holder }}<br>IBAN {{ $club.iban }}<br>BIC {{ $club.bic }}</p>
+  </div>
+</section>

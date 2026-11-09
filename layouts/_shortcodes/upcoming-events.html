@@ -1,0 +1,28 @@
+{{- /* "Nächste Termine" box for the home page: the next events with a fixed date.
+       Optional argument: number of events (default 3). */ -}}
+{{- $limit := .Get 0 | default 3 | int -}}
+{{- $upcoming := where (partials.Include "events.html" .) "past" false -}}
+{{- $upcoming = where $upcoming "ts" "!=" 0 -}}
+{{- $upcoming = first $limit (sort $upcoming "ts") -}}
+<section class="sb-box sb-events" aria-labelledby="upcoming-events">
+  <h2 id="upcoming-events" class="sb-box__title">Nächste Termine</h2>
+  {{- if $upcoming }}
+  <ul class="sb-events__list">
+    {{- range $upcoming }}
+    <li class="sb-events__item">
+      <time class="sb-events__date" datetime="{{ time.Format "2006-01-02" .date }}">
+        <span class="sb-events__day">{{ time.Format "2." .date }}</span>
+        <span class="sb-events__month">{{ time.Format "Jan" .date }}</span>
+      </time>
+      <span class="sb-events__text">
+        <span class="sb-events__title">{{ .title }}</span>
+        <span class="sb-events__full-date">{{ time.Format "Monday, 2. January 2006" .date }}</span>
+      </span>
+    </li>
+    {{- end }}
+  </ul>
+  {{- else }}
+  <p class="sb-events__empty">Die nächsten Termine stehen noch nicht fest.</p>
+  {{- end }}
+  <p class="sb-box__more"><a href="{{ relref . "/aktivitaeten" }}">Alle geplanten Aktivitäten</a></p>
+</section>

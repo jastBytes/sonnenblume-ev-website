@@ -8,7 +8,7 @@ weight: 2
 
 ## Geplante Aktivitäten 2026/2027
 
-{{< termine >}}
+{{< events >}}
 
 ## Aktivitäten 2025/2026
 
