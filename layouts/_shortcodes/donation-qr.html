@@ -1,8 +1,8 @@
-{{- /* Donation QR code (GiroCode / EPC QR) built from [params.verein] in config.toml.
+{{- /* Donation QR code (GiroCode / EPC QR) built from [params.club] in config.toml.
        Banking apps use it to prefill recipient, IBAN and remittance information. */ -}}
-{{- $club := site.Params.verein -}}
+{{- $club := site.Params.club -}}
 {{- range slice "account_holder" "iban" "bic" "remittance_info" -}}
-  {{- if not (index $club .) }}{{ errorf "donation-qr: %q is missing in [params.verein] in config.toml" . }}{{ end -}}
+  {{- if not (index $club .) }}{{ errorf "donation-qr: %q is missing in [params.club] in config.toml" . }}{{ end -}}
 {{- end -}}
 {{- /* EPC069-12 payload: service tag, version, UTF-8, SCT, BIC, name, IBAN,
        amount, purpose, structured reference, unstructured remittance */ -}}

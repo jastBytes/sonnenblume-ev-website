@@ -1,7 +1,7 @@
-/* Gestaltung im Stil des Vereinsflyers: Himmel, Wolken, Sonnenblume, Hügel */
+/* Styling in the style of the club flyer: sky, clouds, sunflower, hills */
 
-/* Schrift "Fredoka" (OFL, static/fonts) wird in layouts/_partials/head-additions.html eingebunden,
-   damit der Pfad auch unter dem Unterpfad von GitHub Pages stimmt. */
+/* The "Fredoka" font (OFL, static/fonts) is loaded in layouts/_partials/head-additions.html
+   so that its path also works under a GitHub Pages subpath. */
 
 :root {
   --sb-sky: #62bde8;
@@ -27,7 +27,7 @@
   color: var(--sb-ink);
 }
 
-/* Fredoka schiebt sonst das V über den Punkt in "e.V." */
+/* Otherwise Fredoka pushes the V over the dot in "e.V." */
 .site-nav__link,
 .cloud-card,
 .btn,
@@ -38,7 +38,7 @@ main h3,
   font-kerning: none;
 }
 
-/* Kopfbereich */
+/* Header */
 
 .sky {
   position: relative;
@@ -51,7 +51,7 @@ main h3,
   padding-bottom: 110px;
 }
 
-/* Seiten ohne Titel im Kopfbereich (Impressum, Datenschutz) */
+/* Pages without a title in the header (Impressum, Datenschutz) */
 .sky--compact {
   padding-bottom: 40px;
 }
@@ -113,7 +113,7 @@ main h3,
   filter: drop-shadow(0 4px 6px rgba(0, 60, 100, 0.2));
 }
 
-/* Auf der Startseite steht die große Sonnenblume im Kopfbereich */
+/* On the home page the large sunflower sits in the header */
 .is-home .site-nav__logo {
   display: none;
 }
@@ -163,7 +163,7 @@ main h3,
   background: rgba(255, 255, 255, 0.8);
 }
 
-/* Auf Handys passen vier Punkte nicht in eine Zeile: ordentliches 2 x 2 statt 3 + 1 */
+/* Four items do not fit in one row on phones: a tidy 2 x 2 instead of 3 + 1 */
 @media screen and (max-width: 31em) {
   .site-nav__menu {
     display: grid;
@@ -177,14 +177,14 @@ main h3,
     background: rgba(255, 255, 255, 0.75);
   }
 
-  /* Wolken hinter der Navigation würden einen Punkt wie ausgewählt aussehen lassen */
+  /* Clouds behind the navigation would make an item look selected */
   .sky__cloud--a,
   .sky__cloud--b {
     display: none;
   }
 }
 
-/* Platz für die Wolkenbuckel der Karte unter der Navigation (Handy und Tablet) */
+/* Room for the cloud bumps of the card below the navigation (phone and tablet) */
 @media screen and (max-width: 59.99em) {
   .sky .sky__hero {
     padding-top: 2.75rem;
@@ -234,7 +234,7 @@ main h3,
   filter: drop-shadow(0 6px 10px rgba(0, 60, 100, 0.25));
 }
 
-/* Wolkenförmige Karte für Titel und Untertitel */
+/* Cloud-shaped card for title and subtitle */
 .cloud-card {
   position: relative;
   background: var(--sb-cloud);
@@ -348,7 +348,7 @@ main h3,
   }
 }
 
-/* Inhalt */
+/* Content */
 
 main article,
 .page-content {
@@ -396,7 +396,7 @@ main strong {
   color: var(--sb-ink);
 }
 
-/* Fußzeile als grüner Hügel */
+/* Footer as a green hill */
 
 .site-footer {
   background: var(--sb-hill-back);
@@ -424,8 +424,8 @@ main strong {
   text-decoration: underline;
 }
 
-/* Breite Bildschirme: Sonnenblume links, Karte genau in der Mitte,
-   rechts gleich breiter Freiraum. Darunter steht die Sonnenblume über der Karte. */
+/* Wide screens: sunflower on the left, card exactly centred,
+   equally wide empty space on the right. Below this width the sunflower sits above the card. */
 @media screen and (min-width: 75em) {
   .sky__hero {
     display: grid;

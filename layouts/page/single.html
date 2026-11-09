@@ -7,7 +7,7 @@
     {{- end -}}
 
     <article class="{{ $post_class }} center cf pv4 pv5-l ph3 ph4-ns mw7">
-      {{- /* Der Seitentitel steht im Kopfbereich; nur ohne Kopftext hier anzeigen */ -}}
+      {{- /* The page title is shown in the header; repeat it here only when the header has no text */ -}}
       {{ if .Params.omit_header_text }}
         <header>
           <h1 class="f1 page-title">{{ .Title }}</h1>

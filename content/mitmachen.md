@@ -15,13 +15,13 @@ Als gemeinnütziger Verein wollen wir die pädagogische Arbeit des Kindergartens
   - [SEPA-Lastschriftmandat (PDF)](../docs/SEPA-Lastschriftmandat.pdf)
   - Wie wir mit Ihren Daten als Mitglied umgehen, erfahren Sie in unseren [Hinweisen zum Datenschutz](../datenschutz#5-mitgliedschaft-und-spenden).
 - Mit Geld- oder Sachspenden
-  - Spendenkonto bei der {{< verein "bank" >}}: IBAN {{< verein "iban" >}}, BIC {{< verein "bic" >}}
+  - Spendenkonto bei der {{< club "bank" >}}: IBAN {{< club "iban" >}}, BIC {{< club "bic" >}}
   - Auf Nachfrage stellen wir Ihnen gerne eine Spendenbescheinigung aus – schreiben Sie uns einfach eine E-Mail.
 - Mit Ideen oder tatkräftiger Hilfe
 
 {{< donation-qr >}}
 
-Ausgefüllte Formulare können Sie im Kindergarten bei Frau Kleinert abgeben ({{< verein "kindergarten" >}}) oder per Post an uns schicken: Förderverein Sonnenblume e.V., {{< verein "anschrift" >}}.
+Ausgefüllte Formulare können Sie im Kindergarten bei Frau Kleinert abgeben ({{< club "kindergarten_address" >}}) oder per Post an uns schicken: Förderverein Sonnenblume e.V., {{< club "address" >}}.
 
 ### Wie können Sie uns erreichen?
 

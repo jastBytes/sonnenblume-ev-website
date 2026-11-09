@@ -29,8 +29,8 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      # Der Deploy ersetzt den gh-pages-Branch vollständig. Damit offene
-      # PR-Vorschauen dabei nicht gelöscht werden, werden sie mit übernommen.
+      # The deploy replaces the gh-pages branch completely. Carry over open
+      # PR previews so they are not deleted.
       - name: Keep PR previews
         run: |
           if git fetch --depth=1 origin gh-pages && git cat-file -e FETCH_HEAD:pr-preview 2>/dev/null; then
@@ -42,5 +42,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          # Eigene Domain: schreibt die Datei CNAME bei jedem Deploy neu, sonst würde sie gelöscht
+          # Custom domain: rewrite the CNAME file on every deploy, otherwise it would be deleted
           cname: sonnenblume-oberems.de

@@ -39,7 +39,7 @@ jobs:
       - name: Build
         run: |
           hugo --minify --baseURL "$PREVIEW_URL"
-          # Kennung dieses Stands, damit der nächste Schritt erkennt, wann er ausgeliefert wird
+          # Marker for this revision so the next step can tell when it is being served
           echo "${{ github.event.pull_request.head.sha }}" > public/preview-version.txt
 
       - name: Deploy preview
@@ -50,8 +50,8 @@ jobs:
           destination_dir: pr-preview/pr-${{ github.event.pull_request.number }}
           keep_files: true
 
-      # GitHub Pages veröffentlicht erst ein bis drei Minuten nach dem Hochladen.
-      # Warten, bis die Vorschau genau diesen Stand ausliefert (höchstens 10 Minuten).
+      # GitHub Pages publishes one to three minutes after the upload.
+      # Wait until the preview serves exactly this revision (at most 10 minutes).
       - name: Wait until preview is live
         id: wait
         run: |

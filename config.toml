@@ -19,29 +19,29 @@ filename = "sitemap.xml"
 
 [params]
 text_color = "sb-ink"
-# Hintergrund und Grundschrift der Seite (siehe assets/ananke/css/sonnenblume.css)
+# Page background and base font (see assets/ananke/css/sonnenblume.css)
 body_classes = "avenir sb-body"
-# Logo liegt unter assets/ und wird für Header und Favicon automatisch verkleinert
+# Logo lives in assets/ and is resized automatically for the header and favicon
 site_logo = "images/logo.png"
-# Vorschaubild beim Teilen der Seite (z. B. in Messengern)
+# Preview image when the page is shared (e.g. in messengers)
 images = ["images/teilen.jpg"]
 description = "Förderverein Sonnenblume e.V. der Ev. Kita Oberems"
 # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
 background_color_class = "bg-green"
-# Untertitel im Kopfbereich der Startseite
+# Subtitle in the home page header
 hero_subtitle = "des evangelischen Kindergartens Oberems"
 recent_posts_number = 0
 
 [params.ananke]
-# Gestaltung im Stil des Flyers (assets/ananke/css/sonnenblume.css)
+# Styling in the style of the club flyer (assets/ananke/css/sonnenblume.css)
 custom_css = ["sonnenblume.css"]
 
-# Zentrale Vereinsdaten, auf den Seiten per {{< verein "..." >}} eingebunden
-[params.verein]
+# Central club data, used on pages via {{< club "..." >}}
+[params.club]
 email = "fvsonnenblume.oberems@gmail.com"
-anschrift = "c/o Jan Steffen, Hauptstraße 27c, 61479 Glashütten"
-# Ort für persönliche Abgabe und Ansprache, keine Postanschrift des Vereins
-kindergarten = "Ev. Kindergarten Oberems, Heuweg 9, 61479 Glashütten"
+address = "c/o Jan Steffen, Hauptstraße 27c, 61479 Glashütten"
+# Place to hand in forms in person; not the club's postal address
+kindergarten_address = "Ev. Kindergarten Oberems, Heuweg 9, 61479 Glashütten"
 account_holder = "Förderverein Sonnenblume e.V."
 iban = "DE24 5019 0000 6000 5794 57"
 bic = "FFVBDEFF"

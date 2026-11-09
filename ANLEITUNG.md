@@ -43,7 +43,7 @@ Jede Seite der Website hat ihre eigene Datei. Ein Klick auf den Link in der rech
 | Kontakt | Kontaktwege | [kontakt.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/kontakt.md) |
 | Impressum | Pflichtangaben, Vorstand | [impressum.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/impressum.md) |
 | Datenschutz | Datenschutzerklärung | [datenschutz.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/datenschutz.md) |
-| Mehrere Seiten | E-Mail, Anschrift, Bankverbindung (auch für den Spenden-QR-Code), Kindergarten-Adresse | [config.toml](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/config.toml), Abschnitt `[params.verein]` |
+| Mehrere Seiten | E-Mail, Anschrift, Bankverbindung (auch für den Spenden-QR-Code), Kindergarten-Adresse | [config.toml](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/config.toml), Abschnitt `[params.club]` |
 | Downloads | Beitrittserklärung und SEPA-Mandat als PDF | Ordner [static/docs](https://github.com/jastBytes/sonnenblume-ev-website/tree/main/static/docs) |
 
 Die Endung `.md` steht für „Markdown“: normaler Text mit ein paar Zeichen für Überschriften, Fettdruck und Listen. Welche Zeichen das sind, steht im Spickzettel weiter unten.
@@ -143,13 +143,13 @@ Der Vorstand steht an mehreren Stellen. Haken Sie die Punkte nach der Wahl ab:
 - [ ] Nur wenn der 1. Vorsitz wechselt, außerdem:
   - [ ] `impressum.md`: Name und Anschrift unter **Verantwortlich für den Inhalt** und die Zeile `c/o …` unter **Anschrift**
   - [ ] `datenschutz.md`: Zeile `c/o …` unter **1. Verantwortlicher**
-  - [ ] `config.toml`: Zeile `anschrift = "c/o …"` (sie erscheint auf *Kontakt* und *Mitmachen*)
+  - [ ] `config.toml`: Zeile `address = "c/o …"` (sie erscheint auf *Kontakt* und *Mitmachen*)
   - [ ] SEPA-Mandat (PDF): Anschrift in der Word-Vorlage ändern und das PDF neu hochladen (siehe unten)
   - [ ] Die Anschrift zur Gläubiger-ID bei der Deutschen Bundesbank aktualisieren lassen (Aufgabe des Kassenwarts)
 
 ### E-Mail, Anschrift oder Bankverbindung ändern
 
-Diese Angaben stehen zentral in der Datei `config.toml` im Abschnitt `[params.verein]` und erscheinen von dort automatisch auf *Kontakt* und *Mitmachen*. Eine Zeile sieht so aus:
+Diese Angaben stehen zentral in der Datei `config.toml` im Abschnitt `[params.club]` und erscheinen von dort automatisch auf *Kontakt* und *Mitmachen*. Eine Zeile sieht so aus:
 
 ```
 iban = "DE24 5019 0000 6000 5794 57"
@@ -177,8 +177,8 @@ Solange Sie nur Text in den Dateien aus der Tabelle oben ändern, kann wenig sch
 ### Bitte unverändert lassen
 
 - **Der Kopfbereich jeder Datei** zwischen den beiden Linien aus drei Bindestrichen `---` ganz oben. Er legt z. B. fest, wo die Seite im Menü steht. Nur `title:` (Seitentitel) und `description:` (Untertitel) dürfen Sie anpassen.
-- **Platzhalter in doppelten geschweiften Klammern** wie `{{< verein "iban" >}}`. An dieser Stelle setzt die Website automatisch den Wert aus `config.toml` ein, hier die IBAN. Um die IBAN zu ändern, ändern Sie sie in `config.toml`, nicht den Platzhalter. Genauso stehen `{{< events >}}`, `{{< upcoming-events >}}` und `{{< donation-qr >}}` für die Terminliste, den Termin-Kasten und den Spenden-QR-Code.
-- **Alle anderen Dateien und Ordner** außer `content`, `static/docs`, `data/events.yaml` und dem Abschnitt `[params.verein]` in `config.toml`. Ordner wie `layouts`, `themes` oder `.github` gehören zur Technik.
+- **Platzhalter in doppelten geschweiften Klammern** wie `{{< club "iban" >}}`. An dieser Stelle setzt die Website automatisch den Wert aus `config.toml` ein, hier die IBAN. Um die IBAN zu ändern, ändern Sie sie in `config.toml`, nicht den Platzhalter. Genauso stehen `{{< events >}}`, `{{< upcoming-events >}}` und `{{< donation-qr >}}` für die Terminliste, den Termin-Kasten und den Spenden-QR-Code.
+- **Alle anderen Dateien und Ordner** außer `content`, `static/docs`, `data/events.yaml` und dem Abschnitt `[params.club]` in `config.toml`. Ordner wie `layouts`, `themes` oder `.github` gehören zur Technik.
 
 ### Wenn etwas schiefgeht
 
