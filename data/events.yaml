@@ -1,0 +1,21 @@
+# Geplante Aktivitäten und Termine (Anleitung: ANLEITUNG.md, "Termine und Aktivitäten aktualisieren")
+#
+# Pro Eintrag eine Zeile mit "- title:". Darunter, um zwei Leerzeichen eingerückt, optional:
+#   date: 06.12.2026   -> fester Tag (TT.MM.JJJJ). Erscheint auf der Startseite unter
+#                         "Nächste Termine" und verschwindet am Tag danach von selbst.
+#   when: März 2027    -> ungefähre Zeitangabe, wenn der Tag noch nicht feststeht
+# Ohne date und when erscheint der Eintrag nur in der Liste auf der Seite "Aktivitäten".
+# Die Reihenfolge hier ist die Reihenfolge auf der Seite "Aktivitäten".
+
+- title: St.-Martins-Umzug in Oberems
+  date: 06.11.2026
+- title: Nikolausgeschenke für den Kindergarten
+- title: Stand auf dem Oberemser Weihnachtsmarkt
+  date: 06.12.2026
+- title: Kino-Abend für die Vorschulkinder
+- title: Zwerkstatt (Holzarbeiten)
+- title: Gewaltpräventionskurs für Vorschulkinder
+- title: Graphomotorik-Workshop für Vorschulkinder
+- title: Schmücken des Brunnens zu Ostern
+  when: März 2027
+- title: Unterstützung des Kindergartenfests

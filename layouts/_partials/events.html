@@ -1,0 +1,31 @@
+{{- /* Reads data/events.yaml and returns the entries in file order.
+       Each entry: title, when, date (time or false), ts (Unix time), past (bool).
+       An event counts as past from the day after it; the site is therefore rebuilt
+       daily (.github/workflows/gh-pages.yml). */ -}}
+{{- $events := slice -}}
+{{- range hugo.Data.events -}}
+  {{- $entry := . -}}
+  {{- if not $entry.title }}{{ errorf "data/events.yaml: entry without title: %v" $entry }}{{ end -}}
+  {{- $date := false -}}
+  {{- with $entry.date -}}
+    {{- $raw := printf "%v" . -}}
+    {{- if findRE `^\d{1,2}\.\d{1,2}\.\d{4}$` $raw -}}
+      {{- /* German format DD.MM.YYYY; trim leading zeros so int does not read them as octal */ -}}
+      {{- $parts := split $raw "." -}}
+      {{- $day := index $parts 0 | strings.TrimLeft "0" | int -}}
+      {{- $month := index $parts 1 | strings.TrimLeft "0" | int -}}
+      {{- $year := index $parts 2 | int -}}
+      {{- $date = time.AsTime (printf "%04d-%02d-%02d" $year $month $day) -}}
+    {{- else -}}
+      {{- $date = time.AsTime . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $past := false -}}
+  {{- $ts := 0 -}}
+  {{- with $date -}}
+    {{- $past = not ((.AddDate 0 0 1).After now) -}}
+    {{- $ts = .Unix -}}
+  {{- end -}}
+  {{- $events = $events | append (dict "title" $entry.title "when" ($entry.when | default "") "date" $date "ts" $ts "past" $past) -}}
+{{- end -}}
+{{- return $events -}}

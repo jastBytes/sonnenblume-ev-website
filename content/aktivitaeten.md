@@ -8,15 +8,7 @@ weight: 2
 
 ## Geplante Aktivitäten 2026/2027
 
-- St.-Martins-Umzug in Oberems – 06.11.2026
-- Nikolausgeschenke für den Kindergarten
-- Stand auf dem Oberemser Weihnachtsmarkt – 06.12.2026
-- Kino-Abend für die Vorschulkinder
-- Zwerkstatt (Holzarbeiten)
-- Gewaltpräventionskurs für Vorschulkinder
-- Graphomotorik-Workshop für Vorschulkinder
-- Schmücken des Brunnens zu Ostern – März 2027
-- Unterstützung des Kindergartenfests
+{{< events >}}
 
 ## Aktivitäten 2025/2026
 

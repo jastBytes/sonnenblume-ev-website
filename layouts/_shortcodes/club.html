@@ -1,0 +1,5 @@
+{{- /* Outputs a value from [params.club] in config.toml, e.g. {{< club "iban" >}} */ -}}
+{{- $key := .Get 0 -}}
+{{- $value := index site.Params.club $key -}}
+{{- if not $value -}}{{- errorf "club shortcode: unknown key %q in %s" $key .Position -}}{{- end -}}
+{{- if eq $key "email" -}}<a href="mailto:{{ $value }}">{{ $value }}</a>{{- else -}}{{ $value }}{{- end -}}

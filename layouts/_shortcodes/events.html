@@ -1,0 +1,8 @@
+{{- /* List of planned activities from data/events.yaml; past events are left out. */ -}}
+<ul>
+{{- range partials.Include "events.html" . }}
+  {{- if not .past }}
+  <li>{{ .title }}{{ with .date }} – {{ time.Format "02.01.2006" . }}{{ else }}{{ with .when }} – {{ . }}{{ end }}{{ end }}</li>
+  {{- end }}
+{{- end }}
+</ul>
