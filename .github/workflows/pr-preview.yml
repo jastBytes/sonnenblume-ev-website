@@ -15,7 +15,16 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+    env:
+      PREVIEW_URL: https://jastbytes.github.io/sonnenblume-ev-website/pr-preview/pr-${{ github.event.pull_request.number }}/
     steps:
+      - name: Comment preview is being built
+        uses: marocchino/sticky-pull-request-comment@v3
+        with:
+          header: pr-preview
+          message: |
+            ⏳ **Vorschau wird erstellt …** Bitte noch nicht öffnen, dieser Kommentar wird aktualisiert, sobald sie bereit ist (meist nach 2–4 Minuten).
+
       - uses: actions/checkout@v7
         with:
           submodules: true
@@ -28,7 +37,10 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify --baseURL "https://jastbytes.github.io/sonnenblume-ev-website/pr-preview/pr-${{ github.event.pull_request.number }}/"
+        run: |
+          hugo --minify --baseURL "$PREVIEW_URL"
+          # Kennung dieses Stands, damit der nächste Schritt erkennt, wann er ausgeliefert wird
+          echo "${{ github.event.pull_request.head.sha }}" > public/preview-version.txt
 
       - name: Deploy preview
         uses: peaceiris/actions-gh-pages@v4
@@ -38,12 +50,37 @@ jobs:
           destination_dir: pr-preview/pr-${{ github.event.pull_request.number }}
           keep_files: true
 
-      - name: Comment preview link
+      # GitHub Pages veröffentlicht erst ein bis drei Minuten nach dem Hochladen.
+      # Warten, bis die Vorschau genau diesen Stand ausliefert (höchstens 10 Minuten).
+      - name: Wait until preview is live
+        id: wait
+        run: |
+          expected="${{ github.event.pull_request.head.sha }}"
+          for i in $(seq 1 60); do
+            served=$(curl -sf "${PREVIEW_URL}preview-version.txt?nocache=$(date +%s)" || true)
+            if [ "$served" = "$expected" ]; then
+              echo "ready=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "ready=false" >> "$GITHUB_OUTPUT"
+
+      - name: Comment preview is ready
+        if: steps.wait.outputs.ready == 'true'
         uses: marocchino/sticky-pull-request-comment@v3
         with:
           header: pr-preview
           message: |
-            🔍 Preview: https://jastbytes.github.io/sonnenblume-ev-website/pr-preview/pr-${{ github.event.pull_request.number }}/
+            ✅ **Vorschau bereit:** ${{ env.PREVIEW_URL }}
+
+      - name: Comment preview is delayed
+        if: steps.wait.outputs.ready != 'true'
+        uses: marocchino/sticky-pull-request-comment@v3
+        with:
+          header: pr-preview
+          message: |
+            ⚠️ **Vorschau braucht länger als üblich.** Bitte in ein paar Minuten öffnen: ${{ env.PREVIEW_URL }}
 
   cleanup-preview:
     if: github.event.action == 'closed'
