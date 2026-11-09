@@ -73,18 +73,18 @@ main h3,
 @media (prefers-reduced-motion: no-preference) {
   .sky__cloud--a,
   .sky__cloud--c {
-    animation: sky-drift 40s ease-in-out infinite alternate;
+    animation: sky-drift 24s ease-in-out infinite alternate;
   }
 
   .sky__cloud--b,
   .sky__cloud--d {
-    animation: sky-drift 55s ease-in-out infinite alternate-reverse;
+    animation: sky-drift 32s ease-in-out infinite alternate-reverse;
   }
 }
 
 @keyframes sky-drift {
-  from { translate: -30px 0; }
-  to { translate: 30px 0; }
+  from { translate: -40px 0; }
+  to { translate: 40px 0; }
 }
 
 .sky__hills {
