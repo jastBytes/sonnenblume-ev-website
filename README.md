@@ -20,5 +20,5 @@ Eine ausführliche Schritt-für-Schritt-Anleitung für den Vorstand, ohne techni
 ## Vorschau
 
 - Für jeden Pull Request wird automatisch eine Vorschau gebaut; der Link erscheint als Kommentar im Pull Request.
-- Lokal lässt sich die Seite mit `make serve` starten (lädt beim ersten Aufruf Hugo herunter) und ist dann unter <http://localhost:1313/sonnenblume-ev-website/> erreichbar.
+- Lokal lässt sich die Seite mit `make serve` starten (lädt beim ersten Aufruf Hugo herunter) und ist dann unter <http://localhost:1313/> erreichbar.
 - Das Theme ist als Git-Submodul eingebunden. Nach dem Klonen einmal `git submodule update --init` ausführen.

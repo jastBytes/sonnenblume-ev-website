@@ -38,3 +38,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          # Eigene Domain: schreibt die Datei CNAME bei jedem Deploy neu, sonst würde sie gelöscht
+          cname: sonnenblume-oberems.de
