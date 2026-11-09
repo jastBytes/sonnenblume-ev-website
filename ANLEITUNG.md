@@ -37,12 +37,13 @@ Jede Seite der Website hat ihre eigene Datei. Ein Klick auf den Link in der rech
 | --- | --- | --- |
 | Startseite | Begrüßungstext | [\_index.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/_index.md) |
 | Über uns | Verein, Vorstand, Wahldatum | [ueber-uns.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/ueber-uns.md) |
-| Aktivitäten | Rückblick und geplante Termine | [aktivitaeten.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/aktivitaeten.md) |
+| Aktivitäten | Rückblick | [aktivitaeten.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/aktivitaeten.md) |
+| Aktivitäten und Startseite | Geplante Aktivitäten und „Nächste Termine“ | [termine.yaml](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/data/termine.yaml) im Ordner `data` |
 | Mitmachen | Mitgliedschaft, Spenden, Formulare | [mitmachen.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/mitmachen.md) |
 | Kontakt | Kontaktwege | [kontakt.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/kontakt.md) |
 | Impressum | Pflichtangaben, Vorstand | [impressum.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/impressum.md) |
 | Datenschutz | Datenschutzerklärung | [datenschutz.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/datenschutz.md) |
-| Mehrere Seiten | E-Mail, Anschrift, Bankverbindung, Kindergarten-Adresse | [config.toml](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/config.toml), Abschnitt `[params.verein]` |
+| Mehrere Seiten | E-Mail, Anschrift, Bankverbindung (auch für den Spenden-QR-Code), Kindergarten-Adresse | [config.toml](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/config.toml), Abschnitt `[params.verein]` |
 | Downloads | Beitrittserklärung und SEPA-Mandat als PDF | Ordner [static/docs](https://github.com/jastBytes/sonnenblume-ev-website/tree/main/static/docs) |
 
 Die Endung `.md` steht für „Markdown“: normaler Text mit ein paar Zeichen für Überschriften, Fettdruck und Listen. Welche Zeichen das sind, steht im Spickzettel weiter unten.
@@ -119,9 +120,19 @@ Die meisten Änderungen betreffen Termine, den Vorstand oder die Kontaktdaten. J
 
 ### Termine und Aktivitäten aktualisieren
 
-Datei: `aktivitaeten.md`. Unter **Geplante Aktivitäten** steht pro Zeile ein Termin, z. B. `- Stand auf dem Oberemser Weihnachtsmarkt – 06.12.2026`. Fügen Sie neue Zeilen nach demselben Muster ein oder löschen Sie erledigte.
+Die geplanten Aktivitäten stehen in der Datei `data/termine.yaml`. Daraus entstehen automatisch die Liste **Geplante Aktivitäten** auf der Seite *Aktivitäten* und der Kasten **Nächste Termine** auf der Startseite. Ein Eintrag sieht so aus:
 
-Zu Beginn eines neuen Vereinsjahres (1. August) wandert die Liste der geplanten Aktivitäten in den Rückblick. Passen Sie dabei auch die Jahreszahlen in den Überschriften an, z. B. `## Aktivitäten 2026/2027`.
+```
+- titel: Stand auf dem Oberemser Weihnachtsmarkt
+  datum: 06.12.2026
+```
+
+- Jeder Eintrag beginnt mit `- titel:`. Die Zeile darunter ist mit **zwei Leerzeichen** eingerückt.
+- `datum:` immer als Tag.Monat.Jahr schreiben, z. B. `06.12.2026`. Nur Einträge mit Datum erscheinen auf der Startseite (die nächsten drei).
+- Steht der Tag noch nicht fest, statt `datum:` die Zeile `zeit: März 2027` verwenden, oder die zweite Zeile ganz weglassen.
+- **Vergangene Termine verschwinden von selbst** am Tag nach dem Termin, Sie müssen sie nicht löschen. Die Website wird dafür jede Nacht neu erstellt.
+
+Zu Beginn eines neuen Vereinsjahres (1. August) übertragen Sie die erledigten Aktivitäten in den Rückblick in `aktivitaeten.md`, löschen sie aus `data/termine.yaml` und passen die Jahreszahlen in den Überschriften an, z. B. `## Aktivitäten 2026/2027`.
 
 ### Nach einer Vorstandswahl
 
@@ -166,8 +177,8 @@ Solange Sie nur Text in den Dateien aus der Tabelle oben ändern, kann wenig sch
 ### Bitte unverändert lassen
 
 - **Der Kopfbereich jeder Datei** zwischen den beiden Linien aus drei Bindestrichen `---` ganz oben. Er legt z. B. fest, wo die Seite im Menü steht. Nur `title:` (Seitentitel) und `description:` (Untertitel) dürfen Sie anpassen.
-- **Platzhalter in doppelten geschweiften Klammern** wie `{{< verein "iban" >}}`. An dieser Stelle setzt die Website automatisch den Wert aus `config.toml` ein, hier die IBAN. Um die IBAN zu ändern, ändern Sie sie in `config.toml`, nicht den Platzhalter.
-- **Alle anderen Dateien und Ordner** außer `content`, `static/docs` und dem Abschnitt `[params.verein]` in `config.toml`. Ordner wie `layouts`, `themes` oder `.github` gehören zur Technik.
+- **Platzhalter in doppelten geschweiften Klammern** wie `{{< verein "iban" >}}`. An dieser Stelle setzt die Website automatisch den Wert aus `config.toml` ein, hier die IBAN. Um die IBAN zu ändern, ändern Sie sie in `config.toml`, nicht den Platzhalter. Genauso stehen `{{< termine >}}`, `{{< naechste-termine >}}` und `{{< spenden-qr >}}` für die Terminliste, den Termin-Kasten und den Spenden-QR-Code.
+- **Alle anderen Dateien und Ordner** außer `content`, `static/docs`, `data/termine.yaml` und dem Abschnitt `[params.verein]` in `config.toml`. Ordner wie `layouts`, `themes` oder `.github` gehören zur Technik.
 
 ### Wenn etwas schiefgeht
 

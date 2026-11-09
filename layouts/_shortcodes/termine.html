@@ -1,0 +1,8 @@
+{{- /* Liste der geplanten Aktivitäten aus data/termine.yaml; vergangene Termine fallen weg. */ -}}
+<ul>
+{{- range partials.Include "termine.html" . }}
+  {{- if not .vorbei }}
+  <li>{{ .titel }}{{ with .datum }} – {{ time.Format "02.01.2006" . }}{{ else }}{{ with .zeit }} – {{ . }}{{ end }}{{ end }}</li>
+  {{- end }}
+{{- end }}
+</ul>

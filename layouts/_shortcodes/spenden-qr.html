@@ -1,0 +1,25 @@
+{{- /* Spenden-QR-Code (GiroCode / EPC-QR) aus den Daten in [params.verein] in config.toml.
+       Banking-Apps füllen damit Empfänger, IBAN und Verwendungszweck aus. */ -}}
+{{- $v := site.Params.verein -}}
+{{- range slice "kontoinhaber" "iban" "bic" "verwendungszweck" -}}
+  {{- if not (index $v .) }}{{ errorf "spenden-qr: %q fehlt in [params.verein] in config.toml" . }}{{ end -}}
+{{- end -}}
+{{- $payload := delimit (slice
+    "BCD" "002" "1" "SCT"
+    (replace $v.bic " " "")
+    $v.kontoinhaber
+    (replace $v.iban " " "")
+    "" "" ""
+    $v.verwendungszweck
+  ) "\n" -}}
+{{- $qr := images.QR $payload (dict "level" "medium" "scale" 4 "targetDir" "images/qr") -}}
+<section class="sb-box sb-spenden" aria-labelledby="spenden-qr">
+  <img class="sb-spenden__qr" src="{{ $qr.RelPermalink }}" width="{{ $qr.Width }}" height="{{ $qr.Height }}"
+       alt="QR-Code für eine Spende an {{ $v.kontoinhaber }}, IBAN {{ $v.iban }}">
+  <div class="sb-spenden__text">
+    <h2 id="spenden-qr" class="sb-box__title">Spenden per Banking-App</h2>
+    <p>Scannen Sie den Code in Ihrer Banking-App mit der Funktion für Überweisungen per QR-Code (z.&nbsp;B. „Scan2Bank“ oder „Foto-Überweisung“). Empfänger, IBAN und Verwendungszweck sind dann schon ausgefüllt, nur den Betrag tragen Sie selbst ein.</p>
+    <p class="sb-spenden__mobil">Sie lesen auf dem Handy? Dann übernehmen Sie die Bankverbindung einfach von hier:</p>
+    <p class="sb-spenden__iban">{{ $v.kontoinhaber }}<br>IBAN {{ $v.iban }}<br>BIC {{ $v.bic }}</p>
+  </div>
+</section>

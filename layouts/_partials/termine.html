@@ -1,0 +1,30 @@
+{{- /* Liest data/termine.yaml und gibt die Einträge in Dateireihenfolge zurück.
+       Jeder Eintrag: titel, zeit, datum (time oder nil), ts (Unix-Zeit), vorbei (bool).
+       "vorbei" gilt ab dem Tag nach dem Termin; deshalb wird die Seite täglich neu gebaut
+       (.github/workflows/gh-pages.yml). */ -}}
+{{- $out := slice -}}
+{{- range hugo.Data.termine -}}
+  {{- $e := . -}}
+  {{- if not $e.titel }}{{ errorf "data/termine.yaml: Eintrag ohne titel: %v" $e }}{{ end -}}
+  {{- $datum := false -}}
+  {{- with $e.datum -}}
+    {{- $s := printf "%v" . -}}
+    {{- if findRE `^\d{1,2}\.\d{1,2}\.\d{4}$` $s -}}
+      {{- $p := split $s "." -}}
+      {{- $d := index $p 0 | strings.TrimLeft "0" | int -}}
+      {{- $m := index $p 1 | strings.TrimLeft "0" | int -}}
+      {{- $y := index $p 2 | int -}}
+      {{- $datum = time.AsTime (printf "%04d-%02d-%02d" $y $m $d) -}}
+    {{- else -}}
+      {{- $datum = time.AsTime . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $vorbei := false -}}
+  {{- $ts := 0 -}}
+  {{- with $datum -}}
+    {{- $vorbei = not ((.AddDate 0 0 1).After now) -}}
+    {{- $ts = .Unix -}}
+  {{- end -}}
+  {{- $out = $out | append (dict "titel" $e.titel "zeit" ($e.zeit | default "") "datum" $datum "ts" $ts "vorbei" $vorbei) -}}
+{{- end -}}
+{{- return $out -}}

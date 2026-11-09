@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+  # Täglich neu bauen, damit vergangene Termine (data/termine.yaml) von selbst verschwinden
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
 
 jobs:
   deploy:
