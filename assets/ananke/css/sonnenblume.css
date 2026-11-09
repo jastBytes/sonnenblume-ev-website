@@ -324,14 +324,11 @@ main h3,
 
 @media screen and (min-width: 60em) {
   .sky__hero {
-    flex-direction: row-reverse;
-    justify-content: center;
-    gap: 3rem;
     padding: 1rem 2rem 2rem;
   }
 
   .sky--home .sky__sun {
-    width: 17rem;
+    width: 12rem;
   }
 
   .sky:not(.sky--home) .sky__hero {
@@ -425,4 +422,29 @@ main strong {
 .site-footer__home:hover {
   color: var(--sb-pink-dark);
   text-decoration: underline;
+}
+
+/* Breite Bildschirme: Sonnenblume links, Karte genau in der Mitte,
+   rechts gleich breiter Freiraum. Darunter steht die Sonnenblume über der Karte. */
+@media screen and (min-width: 75em) {
+  .sky__hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    max-width: none;
+  }
+
+  .sky__sun {
+    grid-column: 1;
+    justify-self: end;
+  }
+
+  .cloud-card {
+    grid-column: 2;
+  }
+
+  .sky--home .sky__sun {
+    width: min(17rem, 100%);
+  }
 }
