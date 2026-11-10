@@ -53,7 +53,19 @@ Wenn Sie Mitglied werden, verarbeiten wir die Angaben aus Ihrer Beitrittserklär
 
 **Erforderliche Angaben:** Name und Anschrift benötigen wir, um Ihre Mitgliedschaft zu führen; die Bankverbindung, sofern Sie am Lastschriftverfahren teilnehmen. Ohne diese Angaben ist eine Mitgliedschaft nicht möglich.
 
-## 6. Ihre Rechte
+## 6. Helferlisten für Veranstaltungen
+
+Für die Organisation von Veranstaltungen (z. B. St.-Martins-Umzug oder Weihnachtsmarkt) führen wir Helferlisten als Tabelle bei Google Sheets der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Den Link dazu geben wir an Eltern und Mitglieder weiter, etwa über die nicht im Menü verlinkte Seite *Helfen* dieser Website. Die Tabelle ist nicht in diese Website eingebunden; Daten werden erst an Google übertragen, wenn Sie den Link öffnen.
+
+**Verarbeitete Daten:** der Name, den Sie in eine Schicht eintragen (wir bitten um Vorname und Anfangsbuchstabe des Nachnamens). Beim Öffnen der Tabelle verarbeitet Google außerdem technische Daten wie Ihre IP-Adresse und, falls Sie angemeldet sind, Ihr Google-Konto.
+
+**Zweck und Rechtsgrundlage:** Einteilung der Helferinnen und Helfer für die Schichten einer Veranstaltung. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse liegt in der Organisation unserer Vereinsveranstaltungen. Die Eintragung ist freiwillig.
+
+**Sichtbarkeit und Speicherdauer:** Alle, die den Link zur Liste haben, sehen die eingetragenen Namen. Nach der Veranstaltung heben wir die Freigabe auf und löschen die Liste, sobald sie nicht mehr gebraucht wird.
+
+Dabei kann eine Übermittlung in die USA stattfinden; Google ist unter dem EU-US Data Privacy Framework zertifiziert. Weitere Informationen finden Sie in der [Datenschutzerklärung von Google](https://policies.google.com/privacy?hl=de).
+
+## 7. Ihre Rechte
 
 Sie haben nach der DSGVO das Recht auf
 
@@ -67,4 +79,4 @@ Wenden Sie sich dazu einfach per E-Mail an uns.
 
 Außerdem haben Sie das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Für uns zuständig ist der Hessische Beauftragte für Datenschutz und Informationsfreiheit, Postfach 3163, 65021 Wiesbaden, [datenschutz.hessen.de](https://datenschutz.hessen.de).
 
-Stand: September 2026
+Stand: November 2026

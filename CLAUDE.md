@@ -4,7 +4,7 @@
 
 **Code immer auf Englisch.** Das gilt für alles, was zur Technik gehört:
 
-- Datei- und Ordnernamen (z. B. `data/events.yaml`, `layouts/_shortcodes/donation-qr.html`)
+- Datei- und Ordnernamen (z. B. `data/events.yaml`, `layouts/_shortcodes/donation-qr.html`). Ausnahme: Dateien unter `content/` bleiben deutsch, weil ihr Name die Adresse der Seite ist (z. B. `content/helfen.md` → `/helfen/`).
 - Namen von Shortcodes, Partials, Variablen, CSS-Klassen und Schlüsseln in `config.toml` oder in Dateien unter `data/`
 - Kommentare in Templates, CSS, `config.toml` und Workflows
 - Fehlermeldungen beim Bauen (`errorf`)
