@@ -42,6 +42,7 @@ Jede Seite der Website hat ihre eigene Datei. Ein Klick auf den Link in der rech
 | Mitmachen | Mitgliedschaft, Spenden, Formulare | [mitmachen.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/mitmachen.md) |
 | Kontakt | Kontaktwege | [kontakt.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/kontakt.md) |
 | Impressum | Pflichtangaben, Vorstand | [impressum.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/impressum.md) |
+| Helfen (nicht im Menü, nur per Link: sonnenblume-oberems.de/helfen/) | Links zu den aktuellen Helferlisten | [helfen.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/helfen.md) |
 | Datenschutz | Datenschutzerklärung | [datenschutz.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/datenschutz.md) |
 | Mehrere Seiten | Vollständiger Vereinsname (Fußzeile), E-Mail, Anschrift, Bankverbindung (auch für den Spenden-QR-Code), Kindergarten-Adresse | [config.toml](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/config.toml), Abschnitt `[params.club]` |
 | Downloads | Beitrittserklärung und SEPA-Mandat als PDF | Ordner [static/docs](https://github.com/jastBytes/sonnenblume-ev-website/tree/main/static/docs) |
@@ -133,6 +134,22 @@ Die geplanten Aktivitäten stehen in der Datei `data/events.yaml`. Daraus entste
 - **Vergangene Termine verschwinden von selbst** am Tag nach dem Termin, Sie müssen sie nicht löschen. Die Website wird dafür jede Nacht neu erstellt.
 
 Zu Beginn eines neuen Vereinsjahres (1. August) übertragen Sie die erledigten Aktivitäten in den Rückblick in `aktivitaeten.md`, löschen sie aus `data/events.yaml` und passen die Jahreszahlen in den Überschriften an, z. B. `## Aktivitäten 2026/2027`.
+
+### Helferliste für eine Veranstaltung
+
+Die Helferlisten sind Google-Tabellen im Google-Konto des Vereins. Dort liegt die Vorlage **Helferliste Vorlage**. Ihr zweiter Tab *Anleitung Vorstand* erklärt Schritt für Schritt, wie Sie eine Liste für eine Veranstaltung anlegen und freigeben.
+
+Damit Eltern die Liste finden, tragen Sie den Link auf der Seite *Helfen* ein (Datei `helfen.md`). Ersetzen Sie dort unter **Aktuelle Helferlisten** den Satz „Gerade gibt es keine offene Helferliste …“ durch eine Zeile pro Liste:
+
+```
+- [Weihnachtsmarkt am 06.12.2026](https://docs.google.com/spreadsheets/d/…)
+```
+
+In die eckigen Klammern kommt der Name der Veranstaltung, in die runden Klammern direkt dahinter der Link aus Google Sheets (**Teilen** → **Link kopieren**).
+
+Die Seite *Helfen* steht nicht im Menü und wird von Suchmaschinen nicht erfasst. Wer die Adresse **sonnenblume-oberems.de/helfen/** kennt, kann sie aber öffnen. Geben Sie die Adresse deshalb nur an Eltern und Mitglieder weiter, z. B. über die Eltern-Gruppe oder einen Aushang im Kindergarten.
+
+Nach der Veranstaltung: die Zeile wieder löschen und den Satz „Gerade gibt es keine offene Helferliste …“ wieder einsetzen, die Freigabe der Tabelle aufheben und die Tabelle löschen, sobald sie nicht mehr gebraucht wird.
 
 ### Nach einer Vorstandswahl
 
