@@ -38,6 +38,8 @@ custom_css = ["sonnenblume.css"]
 
 # Central club data, used on pages via {{< club "..." >}}
 [params.club]
+# Full name as registered (Vereinsregister), shown in the footer
+legal_name = "Sonnenblume – Förderverein des evangelischen Kindergartens Oberems e.V."
 email = "fvsonnenblume.oberems@gmail.com"
 address = "c/o Jan Steffen, Hauptstraße 27c, 61479 Glashütten"
 # Place to hand in forms in person; not the club's postal address
