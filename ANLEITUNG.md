@@ -43,7 +43,7 @@ Jede Seite der Website hat ihre eigene Datei. Ein Klick auf den Link in der rech
 | Kontakt | Kontaktwege | [kontakt.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/kontakt.md) |
 | Impressum | Pflichtangaben, Vorstand | [impressum.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/impressum.md) |
 | Datenschutz | Datenschutzerklärung | [datenschutz.md](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/content/datenschutz.md) |
-| Mehrere Seiten | E-Mail, Anschrift, Bankverbindung (auch für den Spenden-QR-Code), Kindergarten-Adresse | [config.toml](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/config.toml), Abschnitt `[params.club]` |
+| Mehrere Seiten | Vollständiger Vereinsname (Fußzeile), E-Mail, Anschrift, Bankverbindung (auch für den Spenden-QR-Code), Kindergarten-Adresse | [config.toml](https://github.com/jastBytes/sonnenblume-ev-website/edit/main/config.toml), Abschnitt `[params.club]` |
 | Downloads | Beitrittserklärung und SEPA-Mandat als PDF | Ordner [static/docs](https://github.com/jastBytes/sonnenblume-ev-website/tree/main/static/docs) |
 
 Die Endung `.md` steht für „Markdown“: normaler Text mit ein paar Zeichen für Überschriften, Fettdruck und Listen. Welche Zeichen das sind, steht im Spickzettel weiter unten.

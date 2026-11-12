@@ -1,7 +1,7 @@
 <footer class="site-footer w-100 pa3" role="contentinfo">
   <div class="site-footer__inner flex flex-wrap justify-between items-center">
     <a class="site-footer__home f5 pv2 ph3 no-underline" href="{{ .Site.Home.RelPermalink }}">
-      &copy; {{ .Site.Title }} {{ now.Format "2006" }}
+      &copy; {{ now.Format "2006" }} {{ site.Params.club.legal_name | default .Site.Title }}
     </a>
     {{ with .Site.Menus.footer }}
       <ul class="pl0 ma0">
