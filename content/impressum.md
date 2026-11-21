@@ -20,7 +20,7 @@ Hauptstraße 27c
 61479 Glashütten
 
 **Kontakt:**  
-E-Mail: <fvsonnenblume.oberems@gmail.com>
+E-Mail: <kontakt@sonnenblume-oberems.de>
 
 **Vertreten durch:**  
 Vorstand nach § 26 BGB:  

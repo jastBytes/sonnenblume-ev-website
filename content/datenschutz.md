@@ -17,7 +17,7 @@ Sonnenblume – Förderverein des evangelischen Kindergartens Oberems e.V.
 c/o Jan Steffen  
 Hauptstraße 27c  
 61479 Glashütten  
-E-Mail: <fvsonnenblume.oberems@gmail.com>
+E-Mail: <kontakt@sonnenblume-oberems.de>
 
 Der Verein wird durch seinen Vorstand vertreten (siehe [Impressum](../impressum)).
 
